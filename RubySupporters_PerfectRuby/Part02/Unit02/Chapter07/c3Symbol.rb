@@ -1,0 +1,9 @@
+:ruby
+:_ruby
+:ruby=
+:ruby?
+:ruby!
+:CONSTANT
+:$global
+:@ivar
+:@@cva
