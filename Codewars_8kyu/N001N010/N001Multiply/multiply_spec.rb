@@ -13,7 +13,14 @@ describe Multiply do
       it 'return 90' do
         expect(subject.calculate(30, 3)).to eql 90
       end
-
     end
+
+    context '0 * 3' do
+      it 'return 0' do
+        expect(subject.calculate(0, 3)).to eql 0
+      end
+    end
+
+    
   end
 end
