@@ -21,6 +21,10 @@ describe Multiply do
       end
     end
 
-    
+    context '-10 * 4' do
+      it 'return -40' do
+        expect(subject.calculate(-10, 4)).to eql -40
+      end
+    end
   end
 end
