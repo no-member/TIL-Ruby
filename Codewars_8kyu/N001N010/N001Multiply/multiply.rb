@@ -1,5 +1,5 @@
 class Multiply
   def calculate(number1, number2)
-    1
+    number1 * number2
   end
 end
