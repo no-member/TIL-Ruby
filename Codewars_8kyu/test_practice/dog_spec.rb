@@ -30,7 +30,7 @@ RSpec.describe Dog do
 
     context 'when hunger_level is more than 5' do
       subject { described_class.new(hunger_level: 5) }
-      it 'return if hunger_level is 5 or less' do
+      it 'return false' do
         expect(subject).to_not be_hungry
       end
     end

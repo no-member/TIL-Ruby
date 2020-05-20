@@ -2,12 +2,29 @@ require 'rspec'
 require_relative 'multiply'
 
 describe Multiply do
-  describe 'multiply_test1' do
-    before do
-      multiply = Multiply.new
+  describe '#calculate' do
+    context '1 * 2' do
+      it 'return 2' do
+        expect(subject.calculate(1, 2)).to eql 2
+      end
     end
-    it 'should 1 * 2는 2를 반환함' do
-      expect(mulitply.calculate(1, 2)).to eq 2
+
+    context '30 * 3' do
+      it 'return 90' do
+        expect(subject.calculate(30, 3)).to eql 90
+      end
+    end
+
+    context '0 * 3' do
+      it 'return 0' do
+        expect(subject.calculate(0, 3)).to eql 0
+      end
+    end
+
+    context '-10 * 4' do
+      it 'return -40' do
+        expect(subject.calculate(-10, 4)).to eql -40
+      end
     end
   end
 end
