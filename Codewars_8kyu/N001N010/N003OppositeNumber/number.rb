@@ -1,5 +1,5 @@
 class Number
   def opposite(number)
-    -2
+    -number
   end
 end
