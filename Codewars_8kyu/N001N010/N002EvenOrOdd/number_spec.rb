@@ -2,12 +2,18 @@ require 'rspec'
 require_relative 'number'
 
 describe Number do
-  describe '#even_or_odd' do
-    context 'Even number' do
-      subject { described_class.new }
+  subject { described_class.new }
 
+  describe '#even_or_odd' do
+    context '2' do
       it 'should return "Even"' do
         expect(subject.even_or_odd(2)).to eql("Even");
+      end
+    end
+
+    context '1' do
+      it 'should return "Odd"' do
+        expect(subject.even_or_odd(1)).to eql("Odd");
       end
     end
   end
