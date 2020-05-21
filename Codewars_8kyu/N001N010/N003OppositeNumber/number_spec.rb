@@ -26,5 +26,14 @@ describe Number do
         end
       end
     end
+
+    describe 'when number is under 0' do
+      context '-202' do
+        it 'return 202' do
+          expect(subject.opposite(-202)).to eql(202)
+        end
+      end
+    end
+
   end
 end
