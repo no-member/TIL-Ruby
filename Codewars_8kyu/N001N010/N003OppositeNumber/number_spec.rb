@@ -34,6 +34,5 @@ describe Number do
         end
       end
     end
-
   end
 end
