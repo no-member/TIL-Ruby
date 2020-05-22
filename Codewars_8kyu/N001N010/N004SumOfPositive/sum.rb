@@ -1,6 +1,4 @@
-# frozen_string_literal: true
 class Sum
-
   def positive_sum(arr)
     @sum = 0
     arr.each do |number|
@@ -8,5 +6,4 @@ class Sum
     end
     @sum
   end
-
 end

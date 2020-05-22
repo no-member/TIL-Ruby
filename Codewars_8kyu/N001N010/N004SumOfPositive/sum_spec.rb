@@ -17,6 +17,13 @@ describe Sum do
           expect(subject.positive_sum([1, -2, 3, 4, 5])).to eql(13)
         end
       end
+
+      context '[1,-2,3,4]]' do
+        it 'return 8' do
+          expect(subject.positive_sum([1, -2, 3, 4])).to eql(8)
+        end
+      end
+
     end
   end
 end
