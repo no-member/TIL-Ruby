@@ -1,7 +1,7 @@
 require 'rspec'
 require_relative 'number'
 
-describe Number do
+describe Sum do
   subject { described_class.new }
 
   describe '#opposite' do
