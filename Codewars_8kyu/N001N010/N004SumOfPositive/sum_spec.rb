@@ -23,6 +23,14 @@ describe Sum do
           expect(subject.positive_sum([1, -2, 3, 4])).to eql(8)
         end
       end
+    end
+
+    describe 'empty array' do
+      context '[]' do
+        it 'return 0' do
+          expect(subject.positive_sum([])).to eql(0)
+        end
+      end
 
     end
   end
