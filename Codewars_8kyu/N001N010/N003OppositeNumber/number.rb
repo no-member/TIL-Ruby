@@ -1,4 +1,4 @@
-class Number
+class Sum
   def opposite(number)
     -number
   end
