@@ -25,5 +25,18 @@ RSpec.describe MakeNegative do
         end
       end
     end
+
+    describe 'under 0 test' do
+      context '-3' do
+        it 'return 3' do
+          expect(subject.make_negative(-3)).to eql(3)
+        end
+      end
+      context '-109' do
+        it 'return 109' do
+          expect(subject.make_negative(-109)).to eql(109)
+        end
+      end
+    end
   end
 end
