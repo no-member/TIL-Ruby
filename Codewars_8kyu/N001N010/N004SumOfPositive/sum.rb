@@ -1,5 +1,12 @@
+# frozen_string_literal: true
 class Sum
+
   def positive_sum(arr)
-    15
+    @sum = 0
+    arr.each do |number|
+      @sum += number if number > 0
+    end
+    @sum
   end
+
 end
