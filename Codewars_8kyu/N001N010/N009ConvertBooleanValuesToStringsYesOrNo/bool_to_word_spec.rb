@@ -10,6 +10,12 @@ RSpec.describe BoolToWord do
         expect(subject.bool_to_word(false)).to eql("No")
       end
     end
+
+    context 'true' do
+      it 'should return "Yes"' do
+        expect(subject.bool_to_word(true)).to eql("Yes")
+      end
+    end
   end
 end
 
