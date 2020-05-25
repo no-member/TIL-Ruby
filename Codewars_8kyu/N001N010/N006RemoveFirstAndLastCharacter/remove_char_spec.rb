@@ -10,5 +10,11 @@ RSpec.describe RemoveChar do
         expect(subject.remove_char('ok')).to eql('')
       end
     end
+
+    context "place" do
+      it 'should return "lac"' do
+        expect(subject.remove_char('place')).to eql('lac')
+      end
+    end
   end
 end
