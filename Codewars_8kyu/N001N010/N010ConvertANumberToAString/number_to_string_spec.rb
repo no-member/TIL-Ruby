@@ -16,6 +16,12 @@ RSpec.describe NumberToString do
         expect(subject.number_to_string(69)).to eql('69')
       end
     end
+
+    context '120' do
+      it 'should return "120"' do
+        expect(subject.number_to_string(120)).to eql('120')
+      end
+    end
   end
 end
 
