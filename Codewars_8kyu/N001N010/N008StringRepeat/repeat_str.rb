@@ -1,9 +1,13 @@
 class RepeatStr
   def repeat_str(repeat_number, str)
     @answer = ''
-    for num in 1..repeat_number do
+
+    i = 0
+    while i < repeat_number
       @answer += str
+      i += 1
     end
+
     @answer
   end
 end
