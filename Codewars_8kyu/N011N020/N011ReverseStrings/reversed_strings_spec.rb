@@ -4,7 +4,7 @@ require_relative 'reversed_strings'
 RSpec.describe ReversedStrings do
   subject { described_class.new }
 
-  describe '#reverse' do
+  describe '#reverse_word' do
     context 'hello' do
       it 'should return "olleh"' do
         expect(subject.reverse_word('hello')).to eql('olleh')
