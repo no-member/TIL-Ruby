@@ -28,7 +28,7 @@ RSpec.describe Summation do
     describe 'when number is under 0' do
       context '-10' do
         it 'should return -45' do
-          expect(subject.summation(-10)).to eql(-45)
+          expect(subject.summation(-10)).to eql(-55)
         end
       end
     end
