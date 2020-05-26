@@ -16,6 +16,12 @@ RSpec.describe Summation do
         expect(subject.summation(3)).to eql(6)
       end
     end
+
+    context '0' do
+      it 'should return 0' do
+        expect(subject.summation(0)).to eql(0)
+      end
+    end
   end
 end
 
