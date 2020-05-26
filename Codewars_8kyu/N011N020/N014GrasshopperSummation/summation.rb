@@ -1,6 +1,6 @@
 class Summation
 
   def summation(num)
-    3
+    (num + 1) * num / 2
   end
 end
