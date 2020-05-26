@@ -1,6 +1,7 @@
 class NumberToString
 
   def number_to_string(num)
-    String(num)
+    # String(num)
+    num.to_s
   end
 end
