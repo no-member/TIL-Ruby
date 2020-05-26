@@ -7,13 +7,13 @@ RSpec.describe ReversedStrings do
   describe '#reverse' do
     context 'world' do
       it 'should return "dlrow"' do
-        expect(subject.reverse('world')).to eql('dlrow')
+        expect(subject.reverse_word('world')).to eql('dlrow')
       end
     end
 
     context 'co' do
       it 'should return "oc"' do
-        expect(subject.reverse('co')).to eql('oc')
+        expect(subject.reverse_word('co')).to eql('oc')
       end
     end
   end

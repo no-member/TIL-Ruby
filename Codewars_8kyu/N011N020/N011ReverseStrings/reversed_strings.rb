@@ -1,5 +1,5 @@
 class ReversedStrings
-  def reverse(word)
-    'dlrow'
+  def reverse_word(word)
+    word.split('').reverse.join('')
   end
 end
