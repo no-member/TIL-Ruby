@@ -10,6 +10,12 @@ RSpec.describe ReversedStrings do
         expect(subject.reverse('world')).to eql('dlrow')
       end
     end
+
+    context 'co' do
+      it 'should return "oc"' do
+        expect(subject.reverse('co')).to eql('oc')
+      end
+    end
   end
 end
 
