@@ -12,6 +12,7 @@ RSpec.describe BasicOperator do
         end
       end
     end
+
   end
 end
 
