@@ -1,5 +1,5 @@
 class Greet
   def greet
-    # code here
+    'hello world!'
   end
 end
