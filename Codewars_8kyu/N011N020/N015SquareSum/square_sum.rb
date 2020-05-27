@@ -1,6 +1,8 @@
 class SquareSum
 
   def square_sum(nums)
-    5
+    @sum = 0
+    nums.each { |num| @sum += num * num }
+    @sum
   end
 end
