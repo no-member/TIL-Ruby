@@ -10,6 +10,12 @@ RSpec.describe CenturyFromYear do
         expect(subject.century_from_year(89)).to eql(1)
       end
     end
+
+    context '101' do
+      it 'should return 2' do
+        expect(subject.century_from_year(102)).to eql(2)
+      end
+    end
   end
 end
 
