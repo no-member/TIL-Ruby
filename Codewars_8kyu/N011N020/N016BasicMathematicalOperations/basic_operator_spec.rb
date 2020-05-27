@@ -20,6 +20,14 @@ RSpec.describe BasicOperator do
         end
       end
     end
+
+    describe 'when operate is /' do
+      context '/, 2, 2' do
+        it 'should return 1' do
+          expect(subject.basic_operate('/', 2, 2)).to eql(1)
+        end
+      end
+    end
   end
 end
 
