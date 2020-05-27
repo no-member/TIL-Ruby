@@ -12,5 +12,10 @@ class BasicOperator
     when '*'
       value1 * value2
     end
+
+    # value1.send(operator, value2)
+
+    # eval("#{value1}#{operator}#{value2}")
+
   end
 end
