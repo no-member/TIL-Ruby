@@ -1,5 +1,5 @@
 class CenturyFromYear
   def century_from_year(year)
-    1
+    year / 100 + 1
   end
 end
