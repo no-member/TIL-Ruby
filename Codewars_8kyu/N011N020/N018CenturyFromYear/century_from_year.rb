@@ -1,6 +1,5 @@
 class CenturyFromYear
-
   def century_from_year(year)
-    # code here
+    1
   end
 end
