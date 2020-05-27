@@ -16,6 +16,12 @@ RSpec.describe Nathon do
         expect(subject.liters(2)).to eql(1)
       end
     end
+
+    context '3.9' do
+      it 'should return 1' do
+        expect(subject.liters(3.9)).to eql(1)
+      end
+    end
   end
 end
 
