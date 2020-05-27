@@ -1,5 +1,5 @@
 class Nathon
-  def liters
-
+  def liters(times)
+    0
   end
 end

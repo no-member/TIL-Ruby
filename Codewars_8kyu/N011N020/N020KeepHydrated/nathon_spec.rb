@@ -7,7 +7,7 @@ RSpec.describe Nathon do
   describe '#liters' do
     context '1' do
       it 'should return 0' do
-        expect(subject.liters).to eql(0)
+        expect(subject.liters(1)).to eql(0)
       end
     end
   end
