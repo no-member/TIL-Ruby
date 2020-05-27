@@ -13,6 +13,13 @@ RSpec.describe BasicOperator do
       end
     end
 
+    describe 'when operate is -' do
+      context '-, 1, 2' do
+        it 'should return -1' do
+          expect(subject.basic_operate('-', 1, 2)).to eql(-1)
+        end
+      end
+    end
   end
 end
 
