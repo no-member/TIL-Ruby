@@ -27,6 +27,12 @@ RSpec.describe BasicOperator do
           expect(subject.basic_operate('/', 2, 2)).to eql(1)
         end
       end
+
+      context '/, 2, 0' do
+        it 'should return error' do
+          expect(subject.basic_operate('/', 2, 0)).to raise_error(ZeroDivisionError)
+        end
+      end
     end
 
     describe 'when operate is *' do
