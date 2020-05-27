@@ -30,7 +30,7 @@ RSpec.describe BasicOperator do
 
       context '/, 2, 0' do
         it 'should return error' do
-          expect(subject.basic_operate('/', 2, 0)).to raise_error(ZeroDivisionError)
+          expect { subject.basic_operate('/', 2, 0) }.to raise_error(ZeroDivisionError)
         end
       end
     end
