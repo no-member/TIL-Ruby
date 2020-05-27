@@ -7,6 +7,8 @@ class BasicOperator
       value1 - value2
     when '/'
       value1 / value2
+    when '*'
+      value1 * value2
     end
   end
 end
