@@ -1,6 +1,6 @@
 class SquareSum
 
-  def square_sum(num)
+  def square_sum(nums)
     5
   end
 end
