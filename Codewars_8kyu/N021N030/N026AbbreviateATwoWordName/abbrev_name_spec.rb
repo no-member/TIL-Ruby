@@ -10,5 +10,11 @@ RSpec.describe AbbrevName do
         expect(subject.abbrev_name("Sam Harris")).to eql("S.H")
       end
     end
+
+    context 'Evan Cole' do
+      it 'should return E.C' do
+        expect(subject.abbrev_name("Evan Cole")).to eql("E.C")
+      end
+    end
   end
 end
