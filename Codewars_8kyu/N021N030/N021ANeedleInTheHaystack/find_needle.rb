@@ -7,13 +7,6 @@ class FindNeedle
   end
 
   def find_needle_index(haystack)
-    index_number = 0
-    haystack.each do |element|
-      if element == 'needle'
-        return index_number
-      end
-
-      index_number += 1
-    end
+    haystack.index('needle')
   end
 end
