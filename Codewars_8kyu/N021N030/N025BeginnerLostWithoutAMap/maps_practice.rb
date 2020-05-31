@@ -1,5 +1,5 @@
 class MapsPractice
   def maps(x)
-    # code here
+    x.map { |n| n * 2 }
   end
 end
