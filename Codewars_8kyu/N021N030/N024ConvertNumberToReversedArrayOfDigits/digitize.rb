@@ -1,5 +1,5 @@
 class Digitize
   def digitize(number)
-    [1,3,2,5,3]
+    String(number).split('').reverse.map(&:to_i)
   end
 end
