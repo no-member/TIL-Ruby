@@ -1,5 +1,5 @@
 class Divisible
   def is_divisible(n,x,y)
-    nil
+    n % x == 0 && n % y == 0
   end
 end
