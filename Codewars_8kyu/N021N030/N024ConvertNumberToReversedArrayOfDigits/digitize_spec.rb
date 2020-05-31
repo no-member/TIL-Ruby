@@ -16,5 +16,11 @@ RSpec.describe Digitize do
         expect(subject.digitize(348597)).to eql([7,9,5,8,4,3])
       end
     end
+
+    context '3' do
+      it 'should return [3]' do
+        expect(subject.digitize(3)).to eql([3])
+      end
+    end
   end
 end
