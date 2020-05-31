@@ -25,10 +25,10 @@ RSpec.describe Greet do
       end
     end
 
-    describe 'greet Jonny with special messgae' do
-      context 'Jonny' do
+    describe 'greet Johnny with special messgae' do
+      context 'Johnny' do
         it 'should return Hello, my love!' do
-          expect(subject.greet('Jonny')).to eql('Hello, my love!')
+          expect(subject.greet('Johnny')).to eql('Hello, my love!')
         end
       end
     end
