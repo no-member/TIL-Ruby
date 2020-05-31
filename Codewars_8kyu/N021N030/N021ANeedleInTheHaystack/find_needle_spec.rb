@@ -11,5 +11,13 @@ RSpec.describe FindNeedle do
             .to eql('found the needle at position 3')
       end
     end
+
+
+    context "['283497238987234', 'a dog', 'a cat', 'some random junk', 'a piece of hay', 'needle', 'something somebody lost a while ago']" do
+      it 'should return found the needle at position 5' do
+        expect(subject.find_needle(['283497238987234', 'a dog', 'a cat', 'some random junk', 'a piece of hay', 'needle', 'something somebody lost a while ago']))
+            .to eql('found the needle at position 5')
+      end
+    end
   end
 end
