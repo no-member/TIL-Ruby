@@ -18,6 +18,14 @@ RSpec.describe CountPositiveSumNegative do
         end
       end
     end
+
+    describe 'sum negative' do
+      context '[-1]' do
+        it 'should return [0, -1]' do
+          expect(subject.count_positives_sum_negative([0, -1])).to eql([0, -1])
+        end
+      end
+    end
   end
 end
 
