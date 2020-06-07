@@ -1,9 +1,9 @@
 class SquareSum
 
   def square_sum(numbers)
-    # @sum = 0
-    # numbers.each { |num| @sum += num * num }
-    # @sum
+    # sum = 0
+    # numbers.each { |num| sum += num * num }
+    # sum
 
     numbers.map { |num| num * num }.reduce(:+)
 
