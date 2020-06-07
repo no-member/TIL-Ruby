@@ -54,7 +54,7 @@ end
 ruler2 = Ruler2.new
 ruler2.length = 22
 ruler2.display_length
-puts
+pusd
 
 class Ruler3
   attr_accessor :length
