@@ -1,5 +1,5 @@
 class DoubleInteger
-  def double
-
+  def double(n)
+    n * 2
   end
 end
