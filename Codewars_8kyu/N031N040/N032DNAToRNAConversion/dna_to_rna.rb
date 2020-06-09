@@ -1,5 +1,5 @@
 class DnaToRna
   def dna_to_rna(dna)
-    'UUUU'
+    dna.gsub(/T/, 'U')
   end
 end

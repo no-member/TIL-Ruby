@@ -10,6 +10,7 @@ RSpec.describe DnaToRna do
         expect(subject.dna_to_rna('TTTT')).to eql('UUUU')
       end
     end
+
     
     context 'GCAT' do
       it 'should reutnr GCAU' do
