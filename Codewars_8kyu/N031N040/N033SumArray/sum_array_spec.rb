@@ -10,5 +10,12 @@ RSpec.describe SumArray do
         expect(subject.sum_array([1])).to eql(1)
       end
     end
+
+    context '[1, 2]' do
+      it 'should return 3' do
+        expect(subject.sum_array([1, 2])).to eql(3)
+      end
+    end
+
   end
 end
