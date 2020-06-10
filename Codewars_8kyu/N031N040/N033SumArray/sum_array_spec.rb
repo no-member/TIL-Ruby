@@ -17,5 +17,16 @@ RSpec.describe SumArray do
       end
     end
 
+    context '[2, 6, 10]' do
+      it 'should return 18' do
+        expect(subject.sum_array([2, 6, 10])).to eql(18)
+      end
+    end
+
+    context '[]' do
+      it 'should return 0' do
+        expect(subject.sum_array([])).to eql(0)
+      end
+    end
   end
 end
