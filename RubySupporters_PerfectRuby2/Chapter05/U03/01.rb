@@ -41,5 +41,9 @@ puts str.scan(/(\w+)zaki/)
 puts
 
 puts str.scan(/\w+zaki/) {|s| puts s.upcase}
-puts str.scan(/(\w+)zaki/) {|s| puts s.upcase}
+# puts str.scan(/(\w+)zaki/) {|s| puts s.upcase}
 puts
+
+part = Regexp.escape('(incompletete)')
+# part = 'incompletete'
+puts /[^.]+#{part}\.txt/
