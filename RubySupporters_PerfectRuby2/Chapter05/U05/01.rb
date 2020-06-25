@@ -104,4 +104,75 @@ puts('take_while and drop_while')
 array = [0, 4, 2, 5, 1]
 p array.take_while {|n| n < 3}
 p array.drop_while {|n| n < 3}
+puts
+
+puts('inject and reduce')
+puts [4, 4, 2, 3].inject(0) {|result, num|
+  result + num
+}
+
+puts [4, 4, 2, 3].reduce(0) {|result, num|
+  result + num
+}
+puts
+
+puts [4, 4, 2, 3].inject {|result, num|
+  result + num
+}
+
+puts [4, 4, 2, 3].reduce {|result, num|
+  result + num
+}
+puts
+
+puts [4, 4, 2, 3].inject(:+)
+puts [4, 4, 2, 3].reduce(:+)
+puts
+
+puts('each_with_object')
+p %w(Alice Bob Charlie).each_with_object({}) {|name, result|
+  result[name] = name.length
+}
+
+test = {"Alice" => 5, "Bob" => 3, "Charlie" => 7}
+puts test
+puts
+
+puts('## 요소 그루핑')
+puts('### group_by')
+array = [1, 2.0, 3.0, 4]
+p array.group_by {|val| val.class }
+puts
+
+puts('### partition')
+array = [1, 2, 3, 4, 5]
+p array.partition {|n| n.even? }
+puts
+
+puts('## 최솟값과 최댓값')
+puts('### min')
+range = (1..10)
+p range.min
+puts
+
+puts('### max')
+p range.max
+puts
+
+puts('### minmax')
+p range.minmax
+puts
+
+puts('#### min_by')
+people = %w(Alice Bob Charlie)
+p people.min_by {|s| s.length }
+puts
+
+puts('#### max_by')
+p people.max_by {|s| s.length}
+puts
+
+puts('#### minmax_by')
+p people.minmax_by {|s| s.length}
+puts
 
