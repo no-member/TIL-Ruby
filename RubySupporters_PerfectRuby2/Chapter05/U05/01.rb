@@ -176,3 +176,14 @@ puts('#### minmax_by')
 p people.minmax_by {|s| s.length}
 puts
 
+puts('## 정렬')
+people = %w(Bob Alice Charlie)
+puts("###sort")
+p people.sort
+puts
+
+p people.sort {|a, b| a.length <=> b.length }
+puts
+
+p people.sort_by {|name| name.length }
+puts
