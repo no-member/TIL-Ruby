@@ -63,8 +63,76 @@ puts()
 puts()
 
 puts("## values_at")
-p array= [4, 1, 2, 3]
-p array.values_at(1)
-p array.values_at(1, 3)
+p array= [4, 2, 1, 3]
+p array.values_at(1) # [2]
+p array.values_at(1, 3) # [2, 3]
+puts
 
+puts('## first')
+p array = [4, 2, 1, 3]
+p array.first # 4
+p array.first(3) # [4, 2, 1]
+puts
+
+puts('## last')
+p array = [4, 2, 1, 3]
+p array.last # 3
+p array.last(3) # [2, 1, 3]
+puts
+
+puts('## sample')
+p array = [4, 2, 1, 3]
+p array.sample # 랜덤으로 하나 가져온다.
+p array.sample(2) # 랜덤으로 2개를 배열로 가져온다.
+puts
+
+puts('## assoc')
+p array = [[:foo, 4], [:bar, 2], [:baz, 3]]
+p array.assoc(:bar)
+puts
+
+puts('# 요소 추가와 삭제')
+puts('## 기본 사용법')
+p array = [4, 2, 1, 3]
+p "after array[0] = 5"
+array[0] = 5
+p array
+p "after array[10] = 1"
+array[10] = 1
+p array
+puts
+
+puts('## push or <<')
+p array = [4, 2, 1, 3]
+puts ("after << 6")
+array << 6
+p array # [4, 2, 1, 3, 6]
+puts ("after push 5")
+array.push(5)
+p array # [4, 2, 1, 3, 6, 5]
+puts
+
+puts('## pop')
+p array = [4, 2, 1, 3]
+puts ("array.pop")
+p array.pop # 3
+puts ("after pop")
+p array # [4, 2, 1]
+puts
+
+puts("## shift")
+p array = [4, 2, 1, 3]
+puts ("array.shift")
+p array.shift
+puts ("after shift")
+p array
+puts
+
+puts("## unshift")
+p array = [4, 2, 1, 3]
+puts ("array.unshift(4)")
+p array.unshift(4) # [4, 4, 2, 1, 3]
+puts ("after unshift(4)")
+p array # [4, 4, 2, 1, 3]
+puts
 
