@@ -46,3 +46,25 @@ puts()
 puts("*")
 p [1, 2, 3] * 2
 puts()
+
+puts ("## 특정")
+p array = [4, 4, 2, 3]
+print "array[2] : ", array[2]
+puts()
+puts()
+
+puts("### 범위 지정하기")
+print "array[2, 2] : ", array[2, 2]
+puts()
+print "array[2..4] : ", array[2..4]
+puts()
+print "array[2...4] : ", array[2...4]
+puts()
+puts()
+
+puts("## values_at")
+p array= [4, 1, 2, 3]
+p array.values_at(1)
+p array.values_at(1, 3)
+
+
