@@ -134,5 +134,46 @@ puts ("array.unshift(4)")
 p array.unshift(4) # [4, 4, 2, 1, 3]
 puts ("after unshift(4)")
 p array # [4, 4, 2, 1, 3]
-puts
+puts()
 
+puts("## select!")
+p array = [4, 2, 1, 3] 
+p array.select! {|v| v.even?} # [4, 2]
+p array # [4, 2]
+puts()
+
+puts("## reject!")
+p array = [4, 2, 1, 3] 
+p array.reject! {|v| v.even?} # [1, 3]
+p array # [1, 3]
+puts()
+
+puts("## delete_if")
+p array = [1, 2, 3, 4, 5]
+p array.delete_if {|v| false } # [1, 2, 3, 4, 5]
+p array # [1, 2, 3, 4, 5]
+p array.reject! { |v| false } # nil
+p array.delete_if {|v| true } # []
+p array # []
+puts()
+
+puts("## keep_if")
+p array = [1, 2, 3, 4, 5]
+p array.keep_if {|v| true } # [1, 2, 3, 4, 5]
+p array # [1, 2, 3, 4, 5]
+p array.select! { |v| true } # nil
+p array.keep_if {|v| false } # []
+p array # []
+puts()
+
+puts("## delete")
+p array = [4, 4.0, 2, 3]
+p array.delete(4) # 4.0
+p array # [2, 3]
+puts()
+
+puts("## delete_at")
+p array = [4, 3, 2, 1]
+p array.delete_at(1) # 3
+p array # [4, 2, 1]
+puts()
