@@ -177,3 +177,60 @@ p array = [4, 3, 2, 1]
 p array.delete_at(1) # 3
 p array # [4, 2, 1]
 puts()
+
+puts("##compact")
+p array = [false, nil, 0, '', []] # [false, nil, 0, '', []]
+p array.compact() # [false,  0, '', []]
+p array # [false, nil, 0, '', []]
+puts()
+
+p array.compact!() # [false, 0, '', []]
+p array# [false, 0, '', []]
+puts()
+
+puts("##uniq")
+p array = [4, 4, 4.0, 2] # [4, 4, 4.0, 2]
+p array.uniq() # [4, 4.0, 2]
+p array # [4, 4, 4.0, 2]
+puts()
+
+p array.uniq!() # [4, 4.0, 2]
+p array # [4, 4.0, 2]
+
+puts("##reverse")
+p array = [4, 4, 2, 3] # [4, 4, 2, 3]
+p array.reverse() # [3, 2, 4, 4]
+p array # [4, 4, 2, 3]
+puts()
+
+p array.reverse! # [3, 2, 4, 4]
+p array # [3, 2, 4, 4]
+puts()
+
+puts("## flatten")
+p array = [4, [4, [2, 3]]] # [4, [4, [2, 3]]] 
+p array.flatten() # [4, 4, 2, 3]
+p array # [4, [4, [2, 3]]] 
+puts()
+
+p array.flatten!() # [4, 4, 2, 3]
+p array # [4, 4, 2, 3]
+puts()
+
+puts("## sort!")
+p array = [4, 4, 2, 3] # [4, 4, 2, 3] 
+p array.sort!() # [2, 3, 4, 4]
+p array # [2, 3, 4, 4]
+puts()
+
+puts("## sort_by!")
+p array = ["fooo", "fooo", "fo", "foo"] # ["fooo", "fooo", "fo", "foo"]
+p array.sort_by! {|v| v.length } # ["fo", "foo", "fooo", "fooo"]
+p array # ["fo", "foo", "fooo", "fooo"]
+puts()
+
+puts("## map!")
+p people = %w(Alice Bob Charlie) # ["Alice", "Bob", "Charlie"]
+p people.map! {|person| person.upcase} # ["ALICE", "BOB", "CHARLIE"]
+p people # ["ALICE", "BOB", "CHARLIE"]
+puts()
