@@ -234,3 +234,27 @@ p people = %w(Alice Bob Charlie) # ["Alice", "Bob", "Charlie"]
 p people.map! {|person| person.upcase} # ["ALICE", "BOB", "CHARLIE"]
 p people # ["ALICE", "BOB", "CHARLIE"]
 puts()
+
+puts("## tanspose")
+p array = [['a', 'b', 'c'], [1, 2, 3]] # [['a', 'b', 'c'], [1, 2, 3]]
+p array.transpose #  [["a", 1], ["b", 2], ["c", 3]]
+p array # [['a', 'b', 'c'], [1, 2, 3]]
+puts()
+
+puts("## zip")
+p array = [1, 'a'] # [1, 'a']
+p array.zip([2, 'b'], [3, 'c']) # [[1, 2, 3], ["a", "b", "c"]]
+p array # [1, 'a']
+puts()
+
+puts("## bsearch")
+p array = [1, 3, 5, 7, 9] # [1, 3, 5, 7, 9]
+p array.bsearch {|n| n > 6 } # 7
+p array.bsearch {|n| n > 10 } # nil
+puts()
+
+puts("## join")
+p array = [24, 1, 365]
+p array.join # "241365"
+p array.join('-') # "24-1-365" 
+puts()
