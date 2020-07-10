@@ -92,4 +92,47 @@ p hash.merge!({two: 'B'}) # {:one=>"A", :two=>"B"}
 p hash # {:one=>"A", :two=>"B"}
 puts
 
+puts "### invert"
+p hash = {one: 1, two: 2}.invert # {1=>:one, 2=>:two}
+p hash = {foo: 1, bar: 1}.invert # {1=>:bar}
+puts
 
+puts "### has_key?"
+p hash = {foo: nil}
+p hash[:unknown] # nil
+p hash[:foo] # nil
+puts
+
+p hash.has_key?(:unknown) # false
+p hash.has_key?(:foo) # true
+puts
+
+puts "#### has_key?와 같은 기능을 하는 메소드"
+p hash.key?(:foo) # true
+p hash.key?(:unknown) # false
+p hash.member?(:foo) # true
+p hash.member?(:unknown) # false
+p hash.include?(:foo) # true
+p hash.include?(:unknown) # false
+puts
+
+puts "### has_value?"
+p hash = {foo: 'bar'}
+p hash.has_value?('bar') # true
+p hash.has_value?('baz') # false
+puts
+
+puts "#### has_value?와 동일한 기능을 하는 메소드"
+p hash.value?('bar') # true
+p hash.value?('baz') # false
+puts
+
+puts "### keys"
+p hash = {one: 'A', two: 'B', three: 'C'}
+p hash.keys # [:one, :two, :three]
+puts
+
+puts "### key"
+p hash = {one: 'A', two: 'B', three: 'B'}
+p hash.key('B')
+puts
