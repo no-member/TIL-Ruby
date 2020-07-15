@@ -134,5 +134,61 @@ puts
 
 puts "### key"
 p hash = {one: 'A', two: 'B', three: 'B'}
-p hash.key('B')
+p hash.key('B') # two나 three를 반환한다.
 puts
+
+puts "### values"
+p hash = {one: 'A', two: 'B', three: 'C'}
+p hash.values # ["A", "B", "C"]
+puts
+
+puts "### values_at"
+p hash = {one: 'A', two: 'B', three: 'C'}
+p hash.values_at(:three, :two) # ["C", "B"]
+my, plan = hash.values_at(:two, :three)
+p my # "B"
+p plan # "C"
+puts
+
+puts "## 초깃값"
+has_default = Hash.new('undefined')
+p has_default['foo'] # "undefined"
+puts
+
+puts "### 파괴적 메소드를 사용 할 경우"
+has_default = Hash.new("naive")
+value = has_default['foo']
+p value # "naive"
+p value.reverse! # "evian"
+p has_default['foo'] # "evian"
+puts
+
+puts "### 블록 형태 지정"
+has_default = Hash.new {|hash, key| Time.now}
+p has_default['foo'] # 2020-07-16 08:01:43.032874 +0900
+sleep 1
+p has_default['foo'] # 2020-07-16 08:01:44.033604 +0900
+puts
+
+puts "### 이미 존재하는 Hash 객체에 초기값 지정"
+puts "#### default"
+has_default = {}
+p has_default['foo'] # nil
+has_default.default = 'bar'
+p has_default['foo'] # 'bar'
+puts
+
+puts "#### default_proc"
+has_default = {}
+p has_default['foo'] # nil
+has_default.default_proc = ->(hash, key) { Time.now }
+p has_default['foo'] # 2020-07-16 08:15:45.724634 +0900
+puts
+
+puts "### fetch"
+hash = {}
+p hash.fetch('foo', 'this is default') # "this is default"
+p hash.fetch('foo') {|key| key} # "foo"
+# p hash.fetch('foo') # `fetch': key not found: "foo" (KeyError)
+
+
