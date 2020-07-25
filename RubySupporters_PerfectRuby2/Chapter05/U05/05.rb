@@ -25,11 +25,11 @@ end.take(3).force
 puts
 
 puts "### 일반적인 Enumerable을 사용한 경우"
-(0..Float::INFINITY).map do |n|
-  puts "map: #{n}"
-  n.next
-end.select do |n|
-  puts "select: #{n}"
-  n.odd?
-end.take(3).force
+# (0..Float::INFINITY).map do |n|
+#   puts "map: #{n}"
+#   n.next
+# end.select do |n|
+#   puts "select: #{n}"
+#   n.odd?
+# end.take(3).force
 puts
