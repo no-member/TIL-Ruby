@@ -1,3 +1,0 @@
-def happy?
-   true
-end
