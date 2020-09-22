@@ -1,8 +1,7 @@
-code = "${1:target_string} = ${2:cola}"
-goal = "$target_string$ = $cola$"
+code = "${1:target_array_list}.addAll(${2:array_list})"
 
 def change_ultisnipt_live_template(code)
   code.gsub(/\$\{[0-9]+:/, '$').gsub('}', '$')
 end
 
-p goal == change_ultisnipt_live_template(code)
+p change_ultisnipt_live_template(code)
