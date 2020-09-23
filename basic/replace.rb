@@ -1,4 +1,4 @@
-code = "${1:target_array_list}.addAll(${2:array_list})"
+code = "${1:target_list}.join(${2:sep})"
 
 def change_ultisnipt_live_template(code)
   code.gsub(/\$\{[0-9]+:/, '$').gsub('}', '$')
