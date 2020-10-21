@@ -1,1 +1,3 @@
-p 7 ** 2
+# frozen_string_literal: true
+
+p 7**2

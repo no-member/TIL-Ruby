@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 a = [20, 10, 0, 20, 11]
 
 p a
@@ -17,4 +19,3 @@ p b.reverse!
 p b
 
 p ''
-

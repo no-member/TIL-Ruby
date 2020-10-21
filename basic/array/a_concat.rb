@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 a_concat_test = ['Hello', ',']
 a_concat_test2 = ['world']
 

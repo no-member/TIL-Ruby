@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 a = [10, 15, 5, 30, 20]
 
 p a

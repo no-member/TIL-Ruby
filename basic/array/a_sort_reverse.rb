@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 require 'benchmark'
- 
+
 a = [10, 15, 5, 30, 20]
 p a
 puts
@@ -10,7 +12,7 @@ Benchmark.bm do |x|
   end
 
   x.report('b <=> a') do
-    a.sort {|a, b| b <=> a}
+    a.sort { |a, b| b <=> a }
   end
 end
 puts
@@ -28,7 +30,7 @@ puts
 
 Benchmark.bm do |x|
   x.report('b <=> a') do
-    c.sort! {|a, b| b <=> a}
+    c.sort! { |a, b| b <=> a }
   end
 
   x.report('sort.reverse') do

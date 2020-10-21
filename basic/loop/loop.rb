@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 num = 0
 
 loop do
@@ -5,4 +7,3 @@ loop do
   num += 2
   break if num > 12
 end
-

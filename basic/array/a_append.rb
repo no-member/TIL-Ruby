@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 a_append_test = [10, 20, 44]
 p a_append_test
 

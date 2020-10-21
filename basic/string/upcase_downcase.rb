@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 str_upper = 'hi my uppercase'
 p str_upper.upcase
 
