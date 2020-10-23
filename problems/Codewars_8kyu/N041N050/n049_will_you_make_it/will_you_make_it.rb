@@ -1,0 +1,5 @@
+class WillYouMakeIt
+  def zero_fuel(distance, mpg, fuel_left)
+    mpg * fuel_left >= distance
+  end
+end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 str_test = 'str입니다.'
 int_test = 1
 ha_test = {

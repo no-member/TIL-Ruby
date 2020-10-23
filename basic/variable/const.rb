@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 CONST_TEST = 777
 p CONST_TEST
 puts

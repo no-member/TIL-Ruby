@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 if false
-  p "hello"
+  p 'hello'
 else
-  p "hi"
+  p 'hi'
 end

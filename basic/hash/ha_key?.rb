@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ha_key_test = {
   first: 1
 }

@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'greet'
+require_relative './greet'
 
 RSpec.describe Greet do
   subject { described_class.new }

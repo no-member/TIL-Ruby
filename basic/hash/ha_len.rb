@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ha_len_test = {
   first: 1,
   second: 2,

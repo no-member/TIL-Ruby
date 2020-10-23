@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 a_insert_test = [0, 2, 30, 4000, 11]
 
 p a_insert_test
