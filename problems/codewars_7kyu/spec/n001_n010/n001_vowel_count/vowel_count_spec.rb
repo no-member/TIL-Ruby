@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../../../lib/n001_n010/n001_vowel_count/vowel_count'
 require 'rspec'
 

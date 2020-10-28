@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../../../lib/n001_n010/n004_square_every_digit/square_every_digit'
 require 'rspec'
 
@@ -24,4 +26,3 @@ RSpec.describe SquareEveryDigit do
     end
   end
 end
-

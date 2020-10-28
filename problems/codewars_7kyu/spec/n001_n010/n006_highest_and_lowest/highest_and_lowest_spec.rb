@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../../../lib/n001_n010/n006_highest_and_lowest/highest_and_lowest'
 require 'rspec'
 
@@ -18,4 +20,3 @@ RSpec.describe HighestAndLowest do
     end
   end
 end
-

@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# https://www.codewars.com/kata/554b4ac871d6813a03000035
 class HighestAndLowest
   # def high_and_low(numbers)
   #   nums_array = str_num_to_nums_arr(numbers)

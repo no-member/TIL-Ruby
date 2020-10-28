@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../../../lib/n001_n010/n003_disemvowel_trolls/disemvowel_trolls'
 require 'rspec'
 

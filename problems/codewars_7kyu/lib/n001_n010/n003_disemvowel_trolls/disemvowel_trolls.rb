@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# https://www.codewars.com/kata/52fba66badcd10859f00097e
 class DisemvowelTrolls
   def disemvowel(str)
     # vowels = %w[a e i o u A E I O U]
@@ -6,4 +9,3 @@ class DisemvowelTrolls
     str.delete('aeiouAEIOU')
   end
 end
-
