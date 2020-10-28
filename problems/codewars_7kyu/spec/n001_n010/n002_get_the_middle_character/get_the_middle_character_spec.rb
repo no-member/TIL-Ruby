@@ -1,4 +1,4 @@
-require_relative './get_the_middle_character.rb'
+require_relative '../../../lib/n001_n010/n002_get_the_middle_character/get_the_middle_character'
 require 'rspec'
 
 RSpec.describe GetTheMiddleCharacter do

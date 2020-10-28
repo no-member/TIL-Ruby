@@ -1,4 +1,4 @@
-require_relative './vowel_count.rb'
+require_relative '../../../lib/n001_n010/n001_vowel_count/vowel_count'
 require 'rspec'
 
 RSpec.describe VowelCount do
