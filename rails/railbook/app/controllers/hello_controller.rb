@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class HelloController < ApplicationController
   def index
     render plain: 'こんにちは、世界！'
